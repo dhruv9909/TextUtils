@@ -1,15 +1,15 @@
 import React , {useState} from 'react';
 import './App.css'
-import About from './components/About';
+//import About from './components/About';
 import Navbar from './components/Navbar';
 import Textforms from './components/Textforms';
 import Alert from './components/Alert';
-import {
+/*import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
-} from 'react-router-dom';
+} from 'react-router-dom';*/
 
 function App() {
   const [alert, setAlert] = useState(null)
@@ -51,10 +51,10 @@ function App() {
   }}*/
 return (
 <>
-<Router>
+{/*<Router>*/}
 <Navbar title = "Textutils" about = "About TextUtils" mode = {mod} togglemode={togglemode}/>
 <Alert alert = {alert}/>
-<Routes>
+{/*<Routes>
           
           <Route exact path="/about" element={<About />} />
 
@@ -62,7 +62,8 @@ return (
           element={<Textforms heading = "Enter the text below to analyze" mode = {mod} showalert={showalert} />} />
         </Routes>
 
-</Router>
+</Router> */}
+<Textforms heading = "Enter the text below to analyze" mode = {mod} showalert={showalert} />
 </>
 
 );
