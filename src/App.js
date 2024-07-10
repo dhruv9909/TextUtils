@@ -4,7 +4,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import Textforms from './components/Textforms';
 import Alert from './components/Alert';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
     
@@ -38,18 +38,18 @@ function App() {
         }
   
 return (
-        <>
-        
+      
+        <Router>
         <Navbar title = "Textutils" about = "About TextUtils" mode = {mod} togglemode={togglemode}/>
         <Alert alert = {alert}/>
+
         <Routes>
-          
         <Route exact path="/about" element={<About mode = {mod} />} />
         <Route exact path="/"
         element={<Textforms heading = "Enter the text below to analyze" mode = {mod} showalert={showalert} />} />
         </Routes>
-        
-        </>
+
+        </Router>
 
 );
 }
