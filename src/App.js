@@ -44,8 +44,8 @@ return (
         <Alert alert = {alert}/>
 
         <Routes>
-        <Route exact path="/about" element={<About mode = {mod} />} />
-        <Route exact path="/"
+        <Route exact path="/textutils/about" element={<About mode = {mod} />} />
+        <Route exact path="/textutils"
         element={<Textforms heading = "Enter the text below to analyze" mode = {mod} showalert={showalert} />} />
         </Routes>
 
