@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://dhruv9909.github.io/TextUtils/",
+  "homepage": "https://dhruv9909.github.io/textutils/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
